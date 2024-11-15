@@ -1,0 +1,130 @@
+<div class="contenu-carte" style="background: url('/assets/img/mapdemo.png') center/cover;">
+    <div class="tete-carte">
+        <div style="width: 44px; height:44px; background-color:white; border-radius: 50%; background-image: url('/assets/img/logo.png'); background-position: center; background-size: cover; border: 1px solid #d2d2d2;">
+
+        </div>
+        <div class="position-relative">
+            <input type="text" class="form-control recherche" id="" placeholder="Essayez 'Vélo Stationnaire'">
+            <div class="spinner-border spinner-border-sm" role="status">
+                <span class="visually-hidden">Chargement...</span>
+            </div>
+        </div>
+        <span class="flex-grow-1"></span>
+        <button type="button" class="btn btn-icon btn-sm"><span class="icon icon-help-circle-outline"></span></button>
+        <button class="btn btn-primary bouton-connexion">Se connecter</button>
+
+    </div>
+    <div class="card"
+        style="position: fixed; top:60px; left:13px; background-color: white; max-width: 600px; width: 100%; min-height: 300px; border-radius: 20px; padding: 12px;">
+        <h6>Que voulez-vous faire aujourd'hui?</h6>
+        <div class="row">
+            <div class="col col-12 col-md-2" style="padding: 10px; text-align:center">
+                <span class="icon icon-bike icon-36px"></span>
+                <p class="m-0" style="line-height: 14px;"><small>Velo</small></p>
+            </div>
+            <div class="col col-12 col-md-2" style="padding: 10px; text-align:center">
+                <span class="icon icon-tennis icon-36px"></span>
+                <p class="m-0" style="line-height: 14px;"><small>Tennis</small></p>
+            </div>
+            <div class="col col-12 col-md-2" style="padding: 10px; text-align:center">
+                <span class="icon icon-table-tennis icon-36px"></span>
+                <p class="m-0" style="line-height: 14px;"><small>Ping-Pong</small></p>
+            </div>
+            <div class="col col-12 col-md-2" style="padding: 10px; text-align:center">
+                <span class="icon icon-pool icon-36px"></span>
+                <p class="m-0" style="line-height: 14px;"><small>Piscine</small></p>
+            </div>
+            <div class="col col-12 col-md-2" style="padding: 10px; text-align:center">
+                <span class="icon icon-pool icon-36px"></span>
+                <p class="m-0" style="line-height: 14px;"><small>Piscine</small></p>
+            </div>
+            <div class="col col-12 col-md-2" style="padding: 10px; text-align:center">
+                <span class="icon icon-pool icon-36px"></span>
+                <p class="m-0" style="line-height: 14px;"><small>Piscine</small></p>
+            </div>
+            <div class="col col-12 col-md-2" style="padding: 10px; text-align:center">
+                <span class="icon icon-pool icon-36px"></span>
+                <p class="m-0" style="line-height: 14px;"><small>Piscine</small></p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .menu-amenagements {
+            position: fixed;
+            bottom: 20px;
+            left: 13px;
+            background-color: white;
+            max-width: 800px;
+            width: 100%;
+            min-height: 500px;
+            border-radius: 20px;
+            padding: 12px;
+        }
+
+        .menu-amenagements-header{
+            width:100%; 
+            height: 40px; 
+            display: flex; 
+            align-items: center; 
+            gap: 5px;
+        }
+    </style>
+
+    <div class="card menu-amenagements">
+        <div class="menu-amenagements-header">
+            <h5 class="m-0 flex-grow-1">Aménagements du parc Jean Drapeau</h5>
+
+            <button type="button" class="btn btn-outline-danger btn-sm">Signaler</button>
+            <button type="button" class="btn btn-icon btn-sm"><span class="icon icon-close"></span></button>
+
+        </div>
+        <div>
+            <div class="list-group my-2">
+                <div class="list-group-item d-flex align-items-center">
+                    <span class="icon icon-bike icon-24px"></span>
+                    <div class="flex-grow-1 px-3">
+                        <h6 class="m-0">Vélo Stationnaire</h6>
+                        <p class="text-muted m-0"><small>Lorem, ipsum dolor sit amet.</small></p>
+                    </div>                      
+                    <span class="icon icon-alert icon-24px text-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"></span>
+                </div>
+                <div class="list-group-item d-flex align-items-center">
+                    <span class="icon icon-hand-back-left icon-24px"></span>
+                    <div class="flex-grow-1 px-3">
+                        <h6 class="m-0">Barre pull-up</h6>
+                        <p class="text-muted m-0"><small>Lorem, ipsum dolor sit amet.</small></p>
+                    </div>
+                </div>
+                <div class="list-group-item d-flex align-items-center">
+                    <span class="icon icon-table-tennis icon-24px"></span>
+                    <div class="flex-grow-1 px-3">
+                        <h6 class="m-0">Table Ping Pong</h6>
+                        <p class="text-muted m-0"><small>Lorem, ipsum dolor sit amet.</small></p>
+                    </div>
+                </div>
+                <button type="button" class="list-group-item list-group-item-action"><small><span
+                            class="icon icon-plus"></span> Suggérer</small></button>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .contenu-carte {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .tete-carte {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        gap: 5px;
+    }
+</style>
